@@ -14,7 +14,7 @@
     
     <servlet>
         <servlet-name>registroServlet</servlet-name>
-        <servlet-class>co.edu.sena.RegistroUsuario.controller.registroServlet</servlet-class>
+        <servlet-class>co.edu.sena.RegistroUsuario.controller.ServletRegistro</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>registroServlet</servlet-name>
