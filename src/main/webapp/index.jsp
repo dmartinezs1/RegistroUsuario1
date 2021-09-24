@@ -17,8 +17,8 @@
                 <a href="#" class="nav-item nav-link active">Inicio</a>
                 <a href="registerUser" class="nav-item nav-link">Registrarse</a>
                 <a href="#" class="nav-item nav-link">Ingresar</a>
+                <a href="#search" class="nav-item nav-link active">Buscar Personaje</a>
             </div>
-            <div class="navbar-text text-warning ms-3">Ayuda a un click</div>
         </div>
     </nav>
  </header>
@@ -57,9 +57,18 @@
          <p>Aspernatur assumenda beatae commodi delectus deleniti ducimus, eius enim itaque iusto mollitia nam nulla
              placeat quas rem repellat reprehenderit sint voluptates. Deleniti, deserunt earum eligendi possimus quis
              repudiandae sapiente vel.</p>
-         <p>A adipisci, aspernatur dignissimos dolor ea eius enim et, eveniet facilis illum iste, iure maiores natus
-             nihil quaerat quidem quos reiciendis repellat saepe sapiente similique sunt ut vel vero voluptas?</p>
-     </section>
+         <section id="search" class="section">
+             <header class="imageheader"></header>
+             <div class="container">
+                 <h2 class="headline">Search Products</h2>
+                 <form action="search" method="get">
+                     <label class="card-title">Search your product</label>
+                     <input type="search" name="search">
+                     <input type="submit" value="Search">
+                 </form>
+             </div>
+         </section>
+         </section>
  </main>
     <footer class="text-center text-white fixed-bottom">
         <div class="container p-4"></div>
