@@ -15,7 +15,7 @@
             <a href="#" class="navbar-brand text-warning">Mesa de ayuda</a>
             <div class="navbar-nav ms-auto">
                 <a href="#" class="nav-item nav-link active">Inicio</a>
-                <a href="registro" class="nav-item nav-link">Registrarse</a>
+                <a href="registerUser" class="nav-item nav-link">Registrarse</a>
                 <a href="#" class="nav-item nav-link">Ingresar</a>
             </div>
             <div class="navbar-text text-warning ms-3">Ayuda a un click</div>

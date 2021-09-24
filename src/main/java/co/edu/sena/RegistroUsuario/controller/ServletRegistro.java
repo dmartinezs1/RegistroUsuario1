@@ -4,6 +4,7 @@ import co.edu.sena.RegistroUsuario.model.bean.UsuarioBean;
 import co.edu.sena.RegistroUsuario.model.dao.UsuarioDAO;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,6 +14,7 @@ import java.io.IOException;
 import java.text.MessageFormat;
 
 @SuppressWarnings("ALL")
+@WebServlet("/registerUser")
 public class ServletRegistro extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -34,7 +36,7 @@ public class ServletRegistro extends HttpServlet {
             infoMessage="Usuario registrado";
         }
 
-        String page = getHTMLString(req.getServletContext().getRealPath("/_jsp/Registro.jsp"), infoMessage);
+        String page = getHTMLString(req.getServletContext().getRealPath("/_jsp/register.html"), infoMessage);
         resp.getWriter().write(page);
     }//fin dopost
 
@@ -55,7 +57,7 @@ public class ServletRegistro extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String page = getHTMLString(req.getServletContext().getRealPath("/_jsp/Registro.jsp"), "");
+        String page = getHTMLString(req.getServletContext().getRealPath("/_jsp/register.html"), "");
         resp.getWriter().write(page);
     }
 }

@@ -11,13 +11,4 @@
         <servlet-name>GetServlet</servlet-name>
         <url-pattern>/getServlet</url-pattern>
     </servlet-mapping>
-    
-    <servlet>
-        <servlet-name>registroServlet</servlet-name>
-        <servlet-class>co.edu.sena.RegistroUsuario.controller.ServletRegistro</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>registroServlet</servlet-name>
-        <url-pattern>/registro</url-pattern>
-    </servlet-mapping>
 </web-app>
